@@ -4,90 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Master v3.0 - Professional QR Tool</title>
+    
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .gradient-bg { background: linear-gradient(135deg, #007aff 0%, #00c6ff 100%); }
         .feature-card:hover { transform: translateY(-5px); transition: 0.3s; }
         .img-container:hover { transform: scale(1.02); transition: 0.4s; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-slate-50 font-sans text-slate-900">
 
-    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
-        <h1 class="text-2xl font-bold text-blue-600"><i class="fa-solid fa-qrcode mr-2"></i>QR Master</h1>
-        <div class="space-x-6 hidden md:block text-slate-600">
-            <a href="#features" class="hover:text-blue-600 font-medium">Imkoniyatlar</a>
-            <a href="#preview" class="hover:text-blue-600 font-medium">Ko'rinish</a>
-            <a href="https://drive.google.com/uc?export=download&id=10neVTVARtQ45p2pYESwa9SopFfwR-PpW" class="gradient-bg text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:opacity-90 transition">Yuklab olish</a>
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+        <div class="p-4 flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex items-center space-x-3">
+                <img src="logo.ico" alt="Logo" class="w-10 h-10 rounded-lg shadow-sm">
+                <h1 class="text-2xl font-bold text-blue-600 tracking-tight">QR Master</h1>
+            </div>
+            <div class="space-x-6 hidden md:block text-slate-600">
+                <a href="#features" class="hover:text-blue-600 font-medium text-sm uppercase tracking-wider">Imkoniyatlar</a>
+                <a href="#preview" class="hover:text-blue-600 font-medium text-sm uppercase tracking-wider">Ko'rinish</a>
+                <a href="YOUR_DRIVE_LINK_HERE" class="gradient-bg text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:opacity-90 transition text-sm">Yuklab olish</a>
+            </div>
         </div>
     </nav>
 
-    <header class="max-w-7xl mx-auto px-6 py-16 text-center">
-        <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-            QR Kodlar Bilan <span class="text-blue-600">Professional</span> Ishlang
+    <header class="max-w-7xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+            QR Kodlar Bilan <br><span class="text-blue-600">Professional</span> Ishlang
         </h2>
         <p class="text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
             Matnlarni QR-kodga aylantiring, mavjud kodlarni skanerlang va interfeysni Dark/Light rejimlarida o'zingizga moslang.
         </p>
         <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="https://drive.google.com/uc?export=download&id=10neVTVARtQ45p2pYESwa9SopFfwR-PpW" class="gradient-bg text-white px-10 py-4 rounded-2xl text-lg font-bold shadow-2xl hover:opacity-90 transition">
-                <i class="fa-brands fa-windows mr-2"></i> PC uchun yuklab olish (.exe)
+            <a href="YOUR_DRIVE_LINK_HERE" class="gradient-bg text-white px-10 py-5 rounded-2xl text-lg font-bold shadow-2xl hover:scale-105 transition duration-300">
+                <i class="fa-brands fa-windows mr-2 text-2xl"></i> Windows uchun yuklab olish (.exe)
             </a>
-            <div class="bg-white border border-slate-200 text-slate-400 px-10 py-4 rounded-2xl text-lg font-bold flex items-center justify-center">
-                <i class="fa-brands fa-android mr-2"></i> APK (Tez kunda)
+            <div class="bg-white border border-slate-200 text-slate-400 px-10 py-5 rounded-2xl text-lg font-bold flex items-center justify-center cursor-not-allowed">
+                <i class="fa-brands fa-android mr-2 text-2xl"></i> APK (Tez kunda)
             </div>
         </div>
     </header>
 
     <section id="preview" class="max-w-7xl mx-auto px-6 py-12">
-        <div class="text-center mb-12">
-            <h3 class="text-3xl font-bold">Dastur interfeysi</h3>
-            <p class="text-slate-500">Light va Dark mode ko'rinishlari</p>
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold mb-4">Dastur interfeysi</h3>
+            <div class="w-20 h-1.5 gradient-bg mx-auto rounded-full"></div>
         </div>
         
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-2 gap-10">
             <div class="img-container">
-                <img src="img1.png" alt="Light Mode Main" class="rounded-2xl shadow-xl border border-slate-200">
-                <p class="mt-4 text-center text-sm font-semibold text-slate-400">Asosiy menyu (Och rang)</p>
+                <div class="bg-white p-2 rounded-2xl shadow-xl border border-slate-100">
+                    <img src="img1.png" alt="Light Mode Main" class="rounded-xl w-full">
+                </div>
+                <p class="mt-4 text-center text-sm font-bold text-slate-500">Asosiy menyu (Och rang)</p>
             </div>
             <div class="img-container">
-                <img src="img2.png" alt="Settings Light" class="rounded-2xl shadow-xl border border-slate-200">
-                <p class="mt-4 text-center text-sm font-semibold text-slate-400">Sozlamalar oynasi</p>
+                <div class="bg-white p-2 rounded-2xl shadow-xl border border-slate-100">
+                    <img src="img2.png" alt="Settings" class="rounded-xl w-full">
+                </div>
+                <p class="mt-4 text-center text-sm font-bold text-slate-500">Sozlamalar oynasi</p>
             </div>
             <div class="img-container">
-                <img src="img3.png" alt="Dark Mode Main" class="rounded-2xl shadow-xl border border-slate-200">
-                <p class="mt-4 text-center text-sm font-semibold text-slate-400">Asosiy menyu (To'q rang)</p>
+                <div class="bg-white p-2 rounded-2xl shadow-xl border border-slate-100">
+                    <img src="img3.png" alt="Dark Mode Main" class="rounded-xl w-full">
+                </div>
+                <p class="mt-4 text-center text-sm font-bold text-slate-500">Asosiy menyu (To'q rang)</p>
             </div>
             <div class="img-container">
-                <img src="img4.png" alt="Functions Dark" class="rounded-2xl shadow-xl border border-slate-200">
-                <p class="mt-4 text-center text-sm font-semibold text-slate-400">Skanerlash bo'limi</p>
+                <div class="bg-white p-2 rounded-2xl shadow-xl border border-slate-100">
+                    <img src="img4.png" alt="Function" class="rounded-xl w-full">
+                </div>
+                <p class="mt-4 text-center text-sm font-bold text-slate-500">Skanerlash bo'limi</p>
             </div>
         </div>
     </section>
 
-    <section id="features" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-100">
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-            <div class="p-8 feature-card">
-                <i class="fa-solid fa-bolt text-4xl text-blue-500 mb-4"></i>
-                <h4 class="text-xl font-bold mb-2">Tezkor</h4>
-                <p class="text-slate-500 text-sm">Bir necha millisoniya ichida QR yaratish va skanerlash.</p>
+    <section id="features" class="max-w-7xl mx-auto px-6 py-24 border-t border-slate-100">
+        <div class="grid md:grid-cols-3 gap-12 text-center">
+            <div class="p-8 feature-card bg-white rounded-3xl shadow-sm border border-slate-50">
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-bolt text-3xl text-blue-500"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Juda Tezkor</h4>
+                <p class="text-slate-500 leading-relaxed">Bir necha millisoniya ichida murakkab QR-kodlarni yaratish va rasmlardan o'qish imkoniyati.</p>
             </div>
-            <div class="p-8 feature-card">
-                <i class="fa-solid fa-palette text-4xl text-purple-500 mb-4"></i>
-                <h4 class="text-xl font-bold mb-2">Moslashuvchan</h4>
-                <p class="text-slate-500 text-sm">QR ranglarini va interfeys mavzusini o'zgartirish imkoniyati.</p>
+            <div class="p-8 feature-card bg-white rounded-3xl shadow-sm border border-slate-50">
+                <div class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-palette text-3xl text-purple-500"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Modern Dizayn</h4>
+                <p class="text-slate-500 leading-relaxed">Ko'zni charchatmaydigan Dark va Light rejimlaridan birini tanlab foydalaning.</p>
             </div>
-            <div class="p-8 feature-card">
-                <i class="fa-solid fa-shield-halved text-4xl text-green-500 mb-4"></i>
-                <h4 class="text-xl font-bold mb-2">Xavfsiz</h4>
-                <p class="text-slate-500 text-sm">Barcha ma'lumotlar faqat sizning kompyuteringizda qoladi.</p>
+            <div class="p-8 feature-card bg-white rounded-3xl shadow-sm border border-slate-50">
+                <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-shield-halved text-3xl text-green-500"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Xavfsiz</h4>
+                <p class="text-slate-500 leading-relaxed">Dastur oflayn ishlaydi, sizning barcha ma'lumotlaringiz maxfiy va xavfsiz qoladi.</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-slate-400 text-sm">
-        <p>© 2026 QR Master Pro. Barcha huquqlar himoyalangan.</p>
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="mb-4">QR Master Pro — O'zbekistonda tayyorlangan dastur.</p>
+            <p class="text-xs uppercase tracking-widest font-semibold">© 2026 Barcha huquqlar himoyalangan.</p>
+        </div>
     </footer>
 
 </body>
